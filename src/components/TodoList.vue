@@ -11,6 +11,7 @@
     </transition-group>
     <span>Note* If you want change status click on it</span>
     <span>Note* Use "X" button to delete TODO</span>
+    <span>Note* After typing filter unfocus input to commit changes</span>
   </div>
 </template>
 
