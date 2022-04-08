@@ -40,6 +40,7 @@ export default {
 <style lang="scss" scoped>
 .todo-filter {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   max-width: 500px;
@@ -48,6 +49,10 @@ export default {
   background: rgb(249, 249, 249);
   padding: 15px;
   border-radius: 15px;
+
+  span {
+    font-size: 14px;
+  }
 }
 
 label {
