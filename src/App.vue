@@ -16,7 +16,7 @@
       <p>Click above to change The Title tag of page</p>
     </div>
     <NewTodoForm @createTodo="createTodo" />
-    <TodoFilter @callFilter="filterTodo" />
+    <TodoFilter v-if="todoList.length !== 0" @callFilter="filterTodo" />
     <todo-list
       :todoList="searcheadGoal ? filteredList : todoList"
       @deleteTodo="deleteTodo"
