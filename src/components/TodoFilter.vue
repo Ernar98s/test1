@@ -19,7 +19,6 @@ export default {
   data() {
     return {
       todoTitle: '',
-      todoStatus: false,
     };
   },
   mounted() {

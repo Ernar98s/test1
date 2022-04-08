@@ -28,6 +28,7 @@ export default {
       this.$emit('createTodo', {
         id: new Date().valueOf(),
         title: this.todoTitle,
+        status: this.todoStatus,
       });
       this.todoTitle = '';
       this.todoStatus = false;
