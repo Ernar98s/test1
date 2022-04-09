@@ -48,6 +48,16 @@ export default {
       searcheadGoal: '',
     };
   },
+  computed: {
+    filteredList() {
+      return this.todoList.filter((item) => {
+        return (
+          item.title.toLowerCase().indexOf(this.searcheadGoal.toLowerCase()) >
+          -1
+        );
+      });
+    },
+  },
   created() {
     localStorage.title
       ? (this.pageTitle = localStorage.title)
@@ -77,16 +87,6 @@ export default {
     filterTodo(obj) {
       this.searcheadGoal = obj.title;
       localStorage.setItem('todoFilter', this.searcheadGoal);
-    },
-  },
-  computed: {
-    filteredList() {
-      return this.todoList.filter((item) => {
-        return (
-          item.title.toLowerCase().indexOf(this.searcheadGoal.toLowerCase()) >
-          -1
-        );
-      });
     },
   },
 };
