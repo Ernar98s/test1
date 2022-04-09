@@ -3,11 +3,11 @@
     <form class="todo-form" @submit.prevent="submitForm">
       <label for="">
         Todo goal
-        <input class="todo-form--input" type="text" v-model="todoTitle" />
+        <input class="todo-form--input" v-model="todoTitle" type="text" />
       </label>
       <label for="">
         Todo status
-        <input class="todo-form--input" type="checkbox" v-model="todoStatus" />
+        <input class="todo-form--input" v-model="todoStatus" type="checkbox" />
       </label>
       <button type="submit">Create TODO</button>
     </form>

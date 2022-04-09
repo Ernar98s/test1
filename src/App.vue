@@ -2,8 +2,8 @@
   <div id="app">
     <div v-if="showEditor" class="title-container">
       <input
-        class="title-input"
         v-model="pageTitle"
+        class="title-input"
         type="text"
         @blur="showEditor = !showEditor"
       />

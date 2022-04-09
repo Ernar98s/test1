@@ -5,8 +5,8 @@
       Todo goal
       <input
         class="todo-form--input"
-        type="text"
         v-model="todoTitle"
+        type="text"
         @change="callFilter"
       />
     </label>

@@ -1,5 +1,5 @@
 <template>
-  <div class="todoitem--container" v-if="alive">
+  <div v-if="alive" class="todoitem--container">
     <span class="todoitem--title"> {{ item.title }} </span>
     <span
       class="todoitem--status"
